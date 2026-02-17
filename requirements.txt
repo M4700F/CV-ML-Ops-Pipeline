@@ -1,0 +1,58 @@
+# Core dependencies
+dill==0.3.8
+from-root==1.3.0
+notebook==7.2.2
+gdown==5.2.0
+flask-cors==5.0.0
+flask==3.1.0
+
+# YOLOv11 requirements
+# Usage: pip install -r requirements.txt
+
+# Base ------------------------------------------------------------------------
+gitpython>=3.1.43
+matplotlib>=3.9.0
+numpy>=1.24.0,<2.0.0  # YOLOv11 works best with numpy <2.0
+opencv-python>=4.10.0
+Pillow>=10.4.0
+psutil>=6.1.0  # system resources
+PyYAML>=6.0.2
+requests>=2.32.0
+scipy>=1.13.0
+thop>=0.1.1-2209072238  # FLOPs computation
+torch>=2.0.0  # see https://pytorch.org/get-started/locally (recommended)
+torchvision>=0.15.0
+tqdm>=4.66.0
+ultralytics>=8.3.0  # YOLOv11 support (minimum 8.3.0)
+
+# Logging ---------------------------------------------------------------------
+# tensorboard>=2.18.0
+# clearml>=1.16.0
+# comet
+
+# Plotting --------------------------------------------------------------------
+pandas>=2.2.0
+seaborn>=0.13.0
+
+# Export ----------------------------------------------------------------------
+# coremltools>=7.2  # CoreML export
+# onnx>=1.16.0  # ONNX export
+# onnx-simplifier>=0.4.36  # ONNX simplifier
+# nvidia-pyindex  # TensorRT export
+# nvidia-tensorrt  # TensorRT export
+# scikit-learn>=1.5.0  # CoreML quantization
+# tensorflow>=2.17.0  # TF exports (-cpu, -aarch64, -macos)
+# tensorflowjs>=4.21.0  # TF.js export
+# openvino>=2024.4.0  # OpenVINO export
+
+# Deploy ----------------------------------------------------------------------
+setuptools>=75.0.0  # Security fix
+# tritonclient[all]~=2.49.0
+
+# Extras ----------------------------------------------------------------------
+# ipython>=8.29.0  # interactive notebook
+# mss>=9.0.0  # screenshots
+# albumentations>=1.4.0
+# pycocotools>=2.0.8  # COCO mAP
+
+-e .
