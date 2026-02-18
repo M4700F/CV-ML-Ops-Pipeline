@@ -1,0 +1,11 @@
+[ 2026-02-18 13:51:38,132 ] root - INFO - Entered the start_data_ingestion method of TrainPipeline class
+[ 2026-02-18 13:51:38,132 ] root - INFO - Getting the data from URL
+[ 2026-02-18 13:51:38,132 ] root - INFO - Entered initiate_data_ingestion method of DataIngestion class
+[ 2026-02-18 13:51:38,132 ] root - INFO - Downloading dataset from Kaggle: pkdarabi/solarpanel
+[ 2026-02-18 13:52:03,771 ] root - INFO - Dataset downloaded by kagglehub to: /home/thermal/.cache/kagglehub/datasets/pkdarabi/solarpanel/versions/49
+[ 2026-02-18 13:52:03,772 ] root - INFO - Copying dataset from /home/thermal/.cache/kagglehub/datasets/pkdarabi/solarpanel/versions/49 to artifacts/data_ingestion/feature_store
+[ 2026-02-18 13:52:05,566 ] root - INFO - Dataset successfully copied to feature store: artifacts/data_ingestion/feature_store
+[ 2026-02-18 13:52:05,566 ] root - INFO - Exited initiate_data_ingestion method of DataIngestion class
+[ 2026-02-18 13:52:05,566 ] root - INFO - Data ingestion artifact: DataIngestionArtifact(data_download_path='/home/thermal/.cache/kagglehub/datasets/pkdarabi/solarpanel/versions/49', feature_store_path='artifacts/data_ingestion/feature_store')
+[ 2026-02-18 13:52:05,566 ] root - INFO - Got the data from URL
+[ 2026-02-18 13:52:05,566 ] root - INFO - Exited the start_data_ingestion method of TrainPipeline class

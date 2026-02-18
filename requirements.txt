@@ -48,6 +48,8 @@ seaborn>=0.13.0
 # Deploy ----------------------------------------------------------------------
 setuptools>=75.0.0  # Security fix
 # tritonclient[all]~=2.49.0
+python-dotenv
+kagglehub
 
 # Extras ----------------------------------------------------------------------
 # ipython>=8.29.0  # interactive notebook
