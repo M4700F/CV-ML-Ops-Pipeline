@@ -24,6 +24,7 @@ class DataIngestion:
             logging.info("Downloading dataset from Kaggle: pkdarabi/solarpanel")
 
             kaggle_dataset_path = kagglehub.dataset_download("pkdarabi/solarpanel")
+            kaggle_dataset_path = os.path.join(kaggle_dataset_path, "ImageSet")
 
             logging.info(f"Dataset downloaded by kagglehub to: {kaggle_dataset_path}")
             return kaggle_dataset_path

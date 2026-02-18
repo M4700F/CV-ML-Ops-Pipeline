@@ -1,3 +1,7 @@
 .env
-artifacts
+
+artifacts/data_ingestion/feature_store/test/*
+artifacts/data_ingestion/feature_store/train/*
+artifacts/data_ingestion/feature_store/valid/*
+
 __pycache__/
