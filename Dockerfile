@@ -26,7 +26,7 @@ COPY . .
 RUN mkdir -p artifacts/model_trainer templates
 
 # Fix Ultralytics config directory permission issue
-ENV YOLO_CONFIG_DIR=/tmp/Ultralytics
+ENV YOLO_CONFIG_DIR=/tmp
 
 # Render sets PORT dynamically, default to 8080 for local use
 ENV PORT=8080
