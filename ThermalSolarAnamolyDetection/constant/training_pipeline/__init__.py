@@ -18,6 +18,6 @@ DATA_VALIDATION_ALL_REQUIRED_FILES: list = ["train", "valid", "test", "data.yaml
 Model Trainer related constant start with MODEL_TRAINER VAR NAME
 """
 MODEL_TRAINER_DIR_NAME: str = "model_trainer"
-MODEL_TRAINER_PRETRAINED_WEIGHT_NAME: str = "weights/yolo26n.pt"
+MODEL_TRAINER_PRETRAINED_WEIGHT_NAME: str = "yolo26n.pt"
 MODEL_TRAINER_NO_EPOCHS: int = 1
 MODEL_TRAINER_BATCH_SIZE: int = 16
