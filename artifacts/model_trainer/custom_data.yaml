@@ -1,0 +1,13 @@
+train: /run/media/thermal/Study/CV-ML-Ops-Pipeline/artifacts/data_ingestion/feature_store/train/images
+val: /run/media/thermal/Study/CV-ML-Ops-Pipeline/artifacts/data_ingestion/feature_store/valid/images
+test: /run/media/thermal/Study/CV-ML-Ops-Pipeline/artifacts/data_ingestion/feature_store/test/images
+nc: 8
+names:
+- MultiByPassed
+- MultiDiode
+- MultiHotSpot
+- SingleByPassed
+- SingleDiode
+- SingleHotSpot
+- StringOpenCircuit
+- StringReversedPolarity

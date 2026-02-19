@@ -1,0 +1,26 @@
+[ 2026-02-19 15:43:43,318 ] root - INFO - Entered the start_data_ingestion method of TrainPipeline class
+[ 2026-02-19 15:43:43,318 ] root - INFO - Getting the data from URL
+[ 2026-02-19 15:43:43,318 ] root - INFO - Entered initiate_data_ingestion method of DataIngestion class
+[ 2026-02-19 15:43:43,318 ] root - INFO - Downloading dataset from Kaggle: pkdarabi/solarpanel
+[ 2026-02-19 15:43:44,136 ] root - INFO - Dataset downloaded by kagglehub to: /home/thermal/.cache/kagglehub/datasets/pkdarabi/solarpanel/versions/49/ImageSet
+[ 2026-02-19 15:43:44,137 ] root - INFO - Copying dataset from /home/thermal/.cache/kagglehub/datasets/pkdarabi/solarpanel/versions/49/ImageSet to artifacts/data_ingestion/feature_store
+[ 2026-02-19 15:43:50,018 ] root - INFO - Dataset successfully copied to feature store: artifacts/data_ingestion/feature_store
+[ 2026-02-19 15:43:50,018 ] root - INFO - Exited initiate_data_ingestion method of DataIngestion class
+[ 2026-02-19 15:43:50,018 ] root - INFO - Data ingestion artifact: DataIngestionArtifact(data_download_path='/home/thermal/.cache/kagglehub/datasets/pkdarabi/solarpanel/versions/49/ImageSet', feature_store_path='artifacts/data_ingestion/feature_store')
+[ 2026-02-19 15:43:50,018 ] root - INFO - Got the data from URL
+[ 2026-02-19 15:43:50,018 ] root - INFO - Exited the start_data_ingestion method of TrainPipeline class
+[ 2026-02-19 15:43:50,018 ] root - INFO - Entered the start_data_validation method of TrainPipeline class
+[ 2026-02-19 15:43:50,018 ] root - INFO - Entered initiate_data_validation method of DataValidation class
+[ 2026-02-19 15:43:50,019 ] root - INFO - Files found in feature store: ['valid', 'data.yaml', 'test', 'train', 'README.txt']
+[ 2026-02-19 15:43:50,019 ] root - INFO - Required files: ['train', 'valid', 'test', 'data.yaml']
+[ 2026-02-19 15:43:50,019 ] root - INFO - All required files are present.
+[ 2026-02-19 15:43:50,019 ] root - INFO - Exited initiate_data_validation method of DataValidation class
+[ 2026-02-19 15:43:50,019 ] root - INFO - Data validation artifact: DataValidationArtifact(validation_status=True)
+[ 2026-02-19 15:43:50,019 ] root - INFO - Performed the data validation operation
+[ 2026-02-19 15:43:50,019 ] root - INFO - Exited the start_data_validation method of TrainPipeline class
+[ 2026-02-19 15:43:50,019 ] root - INFO - Entered the start_model_trainer method of TrainPipeline class
+[ 2026-02-19 15:43:50,019 ] root - INFO - Entered initiate_model_trainer method of ModelTrainer class
+[ 2026-02-19 15:43:50,021 ] root - INFO - Number of classes: 8
+[ 2026-02-19 15:43:50,021 ] root - INFO - Class names: ['MultiByPassed', 'MultiDiode', 'MultiHotSpot', 'SingleByPassed', 'SingleDiode', 'SingleHotSpot', 'StringOpenCircuit', 'StringReversedPolarity']
+[ 2026-02-19 15:43:50,022 ] root - INFO - Custom data.yaml created at: artifacts/model_trainer/custom_data.yaml
+[ 2026-02-19 15:43:50,022 ] root - INFO - Loading pretrained weights: yolov26s.pt
