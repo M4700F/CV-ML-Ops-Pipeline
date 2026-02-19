@@ -12,7 +12,7 @@ RUN apt-get update && apt-get install -y \
 
 COPY requirements.txt .
 
-# Install PyTorch CPU version first from PyTorch's own index
+# Install PyTorch CPU version from PyTorch's own index
 RUN pip install --no-cache-dir \
     torch==2.10.0 \
     torchvision==0.25.0 \
@@ -25,6 +25,13 @@ COPY . .
 
 RUN mkdir -p artifacts/model_trainer templates
 
+# Fix Ultralytics config directory permission issue
+ENV YOLO_CONFIG_DIR=/tmp/Ultralytics
+
+# Render sets PORT dynamically, default to 8080 for local use
+ENV PORT=8080
+
 EXPOSE 8080
 
-CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8080"]
+# Use shell form so $PORT variable is expanded at runtime
+CMD uvicorn app:app --host 0.0.0.0 --port $PORT
